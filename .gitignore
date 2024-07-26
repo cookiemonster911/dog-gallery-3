@@ -1,0 +1,6 @@
+*
+!.gitignore
+!www
+!www/**
+!package.json
+

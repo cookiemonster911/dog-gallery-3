@@ -1,0 +1,9 @@
+import { DogsStore } from '$houdini';
+
+export const load = (async (event) => {
+	const dogsQuery = new DogsStore();
+	const { data } = await dogsQuery.fetch({ event });
+	console.log(data);
+
+	return data;
+}) satisfies import('./$houdini').PageServerLoad;
